@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="investor.InvestorController">
+    <top>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="100.0" prefWidth="902.0">
+                    <children>
+                        <Label alignment="TOP_CENTER" layoutX="326.0" layoutY="14.0" text="Hamari Car" underline="true">
+                            <font>
+                                <Font name="Times New Roman Bold" size="47.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="83.0" fitWidth="94.0" layoutX="807.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="file:/D:/HmariCar/src/sample/m.jpg" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </top>
+    <left>
+        <VBox prefHeight="500.0" prefWidth="149.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="416.0" prefWidth="186.0" />
+            </children>
+        </VBox>
+    </left>
+    <right>
+        <VBox prefHeight="428.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#sample_view" prefHeight="26.0" prefWidth="94.0" text="Log Out" />
+            </children></VBox>
+    </right>
+    <bottom>
+        <HBox prefHeight="100.0" prefWidth="831.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="100.0" prefWidth="913.0">
+                    <children>
+                        <Button layoutX="725.0" layoutY="2.0" mnemonicParsing="false" onAction="#investBackPressed" prefHeight="26.0" prefWidth="78.0" text="Go Back" />
+                    </children></AnchorPane>
+            </children></HBox>
+    </bottom>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="297.0" layoutY="14.0" text="Invest">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtSector" layoutX="65.0" layoutY="106.0" prefHeight="26.0" prefWidth="82.0" text="sector" />
+                <Label layoutX="65.0" layoutY="75.0" text="Enter car info" />
+                <Button layoutX="509.0" layoutY="103.0" mnemonicParsing="false" onAction="#investPressed" prefHeight="32.0" prefWidth="105.0" text="Invest" />
+            <TextField fx:id="txtType" layoutX="147.0" layoutY="106.0" prefHeight="26.0" prefWidth="82.0" text="type" />
+            <TextField fx:id="txtModel" layoutX="229.0" layoutY="106.0" prefHeight="26.0" prefWidth="82.0" text="model" />
+            <TextField fx:id="txtNumber" layoutX="312.0" layoutY="106.0" prefHeight="26.0" prefWidth="82.0" text="number" />
+            <TextField fx:id="txtColor" layoutX="394.0" layoutY="106.0" prefHeight="26.0" prefWidth="82.0" text="color" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
